@@ -1,0 +1,152 @@
+{
+  "$": {
+    "serviceId": "jdxfrakzvz"
+  },
+  "rest-api-app": {
+    "instanceId": "jdxfrakzvz-mnbis78x"
+  },
+  "rest-api-app:getProduct": {
+    "instanceId": "jdxfrakzvz-9rhtaeth"
+  },
+  "rest-api-app:productsDb": {
+    "type": "aws-dynamodb",
+    "state": {}
+  },
+  "rest-api-app:createProduct": {
+    "instanceId": "jdxfrakzvz-g254151m"
+  },
+  "rest-api-app:listProducts": {
+    "instanceId": "jdxfrakzvz-3ngvxweh"
+  },
+  "rest-api-app:productsApi": {
+    "instanceId": "jdxfrakzvz-cc8pti89"
+  },
+  "rest-api-app:listProducts:defaultRole": {
+    "instanceId": "jdxfrakzvz-xhkzjjqo",
+    "type": "aws-iam-role",
+    "internallyManaged": true,
+    "rootPath": "../../../.nvm/versions/node/v10.15.0/lib/node_modules/serverless-components/registry/aws-iam-role",
+    "inputs": {
+      "name": "func-jdxfrakzvz-3ngvxweh-execution-role",
+      "service": "lambda.amazonaws.com"
+    },
+    "state": {
+      "arn": "arn:aws:iam::855792060135:role/func-jdxfrakzvz-3ngvxweh-execution-role",
+      "service": "lambda.amazonaws.com",
+      "policy": {
+        "arn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "name": "func-jdxfrakzvz-3ngvxweh-execution-role"
+    }
+  },
+  "rest-api-app:getProduct:defaultRole": {
+    "instanceId": "jdxfrakzvz-coxyfzvz",
+    "type": "aws-iam-role",
+    "internallyManaged": true,
+    "rootPath": "../../../.nvm/versions/node/v10.15.0/lib/node_modules/serverless-components/registry/aws-iam-role",
+    "inputs": {
+      "name": "func-jdxfrakzvz-9rhtaeth-execution-role",
+      "service": "lambda.amazonaws.com"
+    },
+    "state": {
+      "arn": "arn:aws:iam::855792060135:role/func-jdxfrakzvz-9rhtaeth-execution-role",
+      "service": "lambda.amazonaws.com",
+      "policy": {
+        "arn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "name": "func-jdxfrakzvz-9rhtaeth-execution-role"
+    }
+  },
+  "rest-api-app:createProduct:defaultRole": {
+    "instanceId": "jdxfrakzvz-bzk1n067",
+    "type": "aws-iam-role",
+    "internallyManaged": true,
+    "rootPath": "../../../.nvm/versions/node/v10.15.0/lib/node_modules/serverless-components/registry/aws-iam-role",
+    "inputs": {
+      "name": "func-jdxfrakzvz-g254151m-execution-role",
+      "service": "lambda.amazonaws.com"
+    },
+    "state": {
+      "arn": "arn:aws:iam::855792060135:role/func-jdxfrakzvz-g254151m-execution-role",
+      "service": "lambda.amazonaws.com",
+      "policy": {
+        "arn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "name": "func-jdxfrakzvz-g254151m-execution-role"
+    }
+  },
+  "undefined": {
+    "instanceId": "jdxfrakzvz-vpntuk9e"
+  },
+  "undefined:productsDb": {
+    "type": "aws-dynamodb",
+    "state": {},
+    "instanceId": "jdxfrakzvz-wwmkxb1y"
+  },
+  "undefined:productsApi": {
+    "instanceId": "jdxfrakzvz-5ycp98sx"
+  },
+  "undefined:listProducts": {
+    "instanceId": "jdxfrakzvz-5qzn56db"
+  },
+  "undefined:createProduct": {
+    "instanceId": "jdxfrakzvz-q3obgtch"
+  },
+  "undefined:getProduct": {
+    "instanceId": "jdxfrakzvz-f11bjyr4"
+  },
+  "undefined:createProduct:defaultRole": {
+    "instanceId": "jdxfrakzvz-mz5l0thl",
+    "type": "aws-iam-role",
+    "internallyManaged": true,
+    "rootPath": "../../../.nvm/versions/node/v10.15.0/lib/node_modules/serverless-components/registry/aws-iam-role",
+    "inputs": {
+      "name": "func-jdxfrakzvz-q3obgtch-execution-role",
+      "service": "lambda.amazonaws.com"
+    },
+    "state": {
+      "arn": "arn:aws:iam::855792060135:role/func-jdxfrakzvz-q3obgtch-execution-role",
+      "service": "lambda.amazonaws.com",
+      "policy": {
+        "arn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "name": "func-jdxfrakzvz-q3obgtch-execution-role"
+    }
+  },
+  "undefined:listProducts:defaultRole": {
+    "instanceId": "jdxfrakzvz-1t8rfdlt",
+    "type": "aws-iam-role",
+    "internallyManaged": true,
+    "rootPath": "../../../.nvm/versions/node/v10.15.0/lib/node_modules/serverless-components/registry/aws-iam-role",
+    "inputs": {
+      "name": "func-jdxfrakzvz-5qzn56db-execution-role",
+      "service": "lambda.amazonaws.com"
+    },
+    "state": {
+      "arn": "arn:aws:iam::855792060135:role/func-jdxfrakzvz-5qzn56db-execution-role",
+      "service": "lambda.amazonaws.com",
+      "policy": {
+        "arn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "name": "func-jdxfrakzvz-5qzn56db-execution-role"
+    }
+  },
+  "undefined:getProduct:defaultRole": {
+    "instanceId": "jdxfrakzvz-pa0kr91t",
+    "type": "aws-iam-role",
+    "internallyManaged": true,
+    "rootPath": "../../../.nvm/versions/node/v10.15.0/lib/node_modules/serverless-components/registry/aws-iam-role",
+    "inputs": {
+      "name": "func-jdxfrakzvz-f11bjyr4-execution-role",
+      "service": "lambda.amazonaws.com"
+    },
+    "state": {
+      "arn": "arn:aws:iam::855792060135:role/func-jdxfrakzvz-f11bjyr4-execution-role",
+      "service": "lambda.amazonaws.com",
+      "policy": {
+        "arn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "name": "func-jdxfrakzvz-f11bjyr4-execution-role"
+    }
+  }
+}

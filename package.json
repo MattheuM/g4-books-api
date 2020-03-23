@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "main": "js/handler.js",
+  "author": "Mattheu McBarnett",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "aws-sdk": "^2.643.0"
+  },
+  "devDependencies": {
+    "serverless-plugin-typescript": "^1.1.9",
+    "typescript": "^3.8.3",
+    "@zeit/ncc": "^0.21.1",
+    "@types/aws-lambda": "^8.10.46",
+    "@types/hapi__joi": "^16.0.12",
+    "tslint": "^6.1.0"    
+  },
+  "scripts": {
+    "compile": "yarn ncc build ./src/handler.ts -w -o js/",
+    "deploy": "sls",
+    "tslint": "tslint -c tslint.json 'src/**/*.ts'",
+    "tslint:fix": "tslint 'src/**/*.ts' --fix"
+  }
+}

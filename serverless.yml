@@ -1,0 +1,77 @@
+service: g4-rest-api
+
+bookDb:
+  component: '@serverless/aws-dynamodb'
+  inputs:
+    name: books # optional
+    attributeDefinitions:
+      - AttributeName: uuid
+        AttributeType: S
+    keySchema:
+      - AttributeName: uuid
+        KeyType: HASH
+
+createBook:
+  component: '@serverless/function'
+  inputs:
+    runtime: nodejs10.x
+    memory: 896
+    timeout: 10
+    code: ./js
+    handler: index.create  
+
+getBook:
+  component: '@serverless/function'
+  inputs:
+    runtime: nodejs10.x
+    memory: 896
+    timeout: 10
+    code: ./js
+    handler: index.get  
+
+updateBook:
+  component: '@serverless/function'
+  inputs:
+    runtime: nodejs10.x
+    memory: 896
+    timeout: 10
+    code: ./js
+    handler: index.update  
+
+deleteBook:
+  component: '@serverless/function'
+  inputs:
+    runtime: nodejs10.x
+    memory: 896
+    timeout: 10
+    code: ./js
+    handler: index.deleteItem  
+
+listBooks:
+  component: '@serverless/function'
+  inputs:
+    runtime: nodejs10.x
+    memory: 896
+    timeout: 10
+    code: ./js
+    handler: index.list  
+
+booksApi:
+  component: '@serverless/api'
+  inputs:
+    endpoints:
+      - path: /book/add
+        method: POST
+        function: ${createBook}         
+      - path: /books
+        method: get
+        function: ${listBooks}         
+      - path: /book/{bookUuid}
+        method: get
+        function: ${getBook}         
+      - path: /book/{bookUuid}/delete
+        method: delete
+        function: ${deleteBook}         
+      - path: /book/{bookUuid}/update
+        method: put
+        function: ${updateBook}         
